@@ -3,7 +3,6 @@
 from sys import argv
 script, threshold = argv
 
-
 def while_test(stop):
     i = 0
     numbers = []
@@ -13,7 +12,7 @@ def while_test(stop):
         print(f"At the top i is {i}")
         numbers.append(i)
 
-        i += 1
+        i += 1 # If you try i += i instead, you will get an infinite loop. Don't do it.
         print("Numbers now: ", numbers)
         print(f"At the bottom i is {i}")
     return numbers
