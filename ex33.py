@@ -8,7 +8,7 @@ def while_test(stop):
     numbers = []
     stop = int(stop)
 
-    while i < stop:
+    while i != stop: # while loops don't need to increment like while i < stop
         print(f"At the top i is {i}")
         numbers.append(i)
 
